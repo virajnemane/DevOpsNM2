@@ -1,0 +1,30 @@
+#Create git account on github.com
+
+#Create git repo
+
+#install git on server
+yum install git -y
+
+#clone git on server
+git clone https://github.com/tciaindiadevops/myfirstrepo.git
+
+#create test file inside repo and check status
+cd myfirstrepo
+touch test
+git status
+
+#add new file in index
+git add test.txt
+git status
+
+#comit file in local repo
+git commit -m "comiting test file"
+git status
+
+#push changes to github
+git push
+
+#Open test file in github make changes and save/commit it.
+
+#pull repo to get latest update.
+git pull
