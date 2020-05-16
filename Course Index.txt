@@ -64,3 +64,9 @@ Terraform (Lecture - 11)
 2) Basics of terraform
 3) Create infrastructure in AWS
 4) Practicle use case
+
+Kubernetes (Lecture - 12)
+1) Intro, what, why Kubernetes
+2) Kubernetes Architecture
+3) understand each component 
+4) Create Kubernetes cluster

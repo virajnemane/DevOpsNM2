@@ -18,7 +18,7 @@ Format :
 6) Use comma to seperate data (row/column).
 7) use square bracket for array/multivalue.
 8) dublicate key not allowed in single doc.
-9) each line should end with {}[], except ast line of list.
+9) each line should end with {}[], except last line of list.
 
 Validate : https://jsonlint.com/
 

@@ -15,8 +15,6 @@ Rules
 5) New list/item start with hyphens -
 6) Use # for comments
 7) space after the colon is mandatory in case of KEY/VALUE
-8) KEY:VALU should enclosed with curly braces {}
-9) List shold enclosed with sqare bracket []
 
 
 Validator - http://www.yamllint.com/
