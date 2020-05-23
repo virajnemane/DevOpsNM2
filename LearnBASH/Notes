@@ -5,7 +5,7 @@ bash
 csh
 ksh
 tcsh
-..and manymore but bash is most famouse one.
+..and manymore but bash is most famous one.
 
 #To execute script execute permission required to current user or else use run script with sh -x
 
