@@ -8,6 +8,6 @@ unset NAME      #can not unset
 echo $?         #To check previous command executed successfully or not
 echo $myname
 echo $NAME
-unset myname    #unset only remove existing value but kep blank line, variable wont get deleted
+unset myname    #unset only remove existing value but keep blank line, variable wont get deleted
 echo $myname
 echo $?
