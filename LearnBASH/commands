@@ -1,0 +1,46 @@
+#Use # (hash) for comment
+
+#Check exit code
+echo $?
+
+#print msg
+echo "Hi"
+
+#Take input
+read VALUE
+
+#Immutable variable
+readonly <variablename>
+
+#make variable empty
+unset <variablename>
+
+#Shell variable example
+echo $$		#Print PID of current bash
+$0			#Filename of current file
+$n			#variables correspond to the arguments 
+$#			#No. of arguments supplied to a script.
+$*			#Print all arguments
+$!			#PID of last background command
+$?			#Exit code of last command executed
+
+#express value
+expr 1 + 2
+
+#For loop to repeat same task
+for i in <list>
+do
+	...do your task ..
+done
+
+#If statement to test condition
+if [ var1 <condition> var2 ]
+then
+	<it true then do this>
+else
+	<if false then do this>
+fi
+
+
+
+
