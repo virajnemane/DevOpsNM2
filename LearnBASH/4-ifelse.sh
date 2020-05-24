@@ -2,10 +2,10 @@
 echo "Enter one number : "
 read num1
 
-if [ $num1 -lt 9 ]
+if [ $num1 -le 9 ]
 then
         echo "Its one digit number."
-elif [[ $num1 -gt 9 && $num1 -lt 99 ]]
+elif [[ $num1 -gt 9 && $num1 -le 99 ]]
 then
         echo "Its 2 digit number."
 else
