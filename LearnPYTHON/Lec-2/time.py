@@ -1,5 +1,21 @@
 import datetime
+from pytz import timezone
+import time
 
-date = datetime.datetime.today()    #Will show your system time.
+print("show your system time.")
+date = datetime.datetime.today()    
 print(date)
-print(datetime.datetime.utcnow())   #will show time from UTC timezone
+
+print("show current time in UTC timezone")
+print(datetime.datetime.utcnow())
+
+print("show time in specific format")
+print(date.strftime("%M-%H-%d-%b-%a")) 
+
+
+print("Show current time in specific timezone.")
+tz="Europe/London"
+tztimesimple = datetime.datetime.now(timezone(tz))
+tztimeformat = datetime.datetime.now(timezone(tz)).strftime("%M-%H-%d-%b-%a")
+print(tztimesimple)
+print(tztimeformat)

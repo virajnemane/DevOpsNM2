@@ -6,7 +6,7 @@ course_list = ['yml','json','python','ansible']
 detail_tup = "Nilesh",45,6.2
 detail_dict = {"name":"Nilesh","age":45,"height":6.2}
 
-essay="This is very odd to write essay on programming, but it true that there are lot of idiots do this."
+essay="This is very odd to write essay on programming, but it true that there are lot of idiots who do this."
 #check data type
 print(type(name))
 print(type(age))
