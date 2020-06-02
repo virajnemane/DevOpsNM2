@@ -14,7 +14,13 @@ Note :
 	#if any of the subject has less than 35 marks, result should be "Fail".
 	#implement error handling, if user enter other than number as marks should show appropriate error like, You have not entered number something like that.
 
-#Create shape.py which will have 3 function, circle, rectangle, square which will calculate their area. Now create another python script calculatearea.py which take shape name as a input from user by asking which shape area want to calculate, give shape suggestion in bracket for which you have written funtion to calculate area. after user give input, script should ask required data to calculate area, i.e. user enter circle then script should ask radius of a circle, which is required to calculate area of circle and then script should calculate area and show on the screen.  i.e.
+#Create shape.py which will have 3 function, circle, rectangle, square which will calculate their area. 
+Now create another python script calculatearea.py which take shape name as a input from user by asking which shape area want to calculate, 
+give shape suggestion in bracket for which you have written funtion to calculate area. after user give input, 
+script should ask required data to calculate area, 
+i.e. user enter circle then script should ask radius of a circle, which is required to calculate area of circle and then script should calculate area 
+and show on the screen.  
+i.e.
 Which shape area you want to calculate? [CIRCLE/SQUARE/RECTANGLE] (press q for quit)	----> this will be script output
 CIRCLE		----> this will be user input
 What is size of radius of a circle?	----> this will be script output
