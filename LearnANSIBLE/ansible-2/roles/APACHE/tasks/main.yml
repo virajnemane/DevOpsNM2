@@ -1,5 +1,14 @@
 ---
 # defaults file for APACHE
+- name: "Uninstall packages"
+  yum: 
+    name: 
+      - httpd
+      - httpd-tool
+      - php
+      - php-cli
+      - php-common
+    state: latest
 - name: "Install require packages"
   yum: 
     name: "{{ PACKAGES }}"
