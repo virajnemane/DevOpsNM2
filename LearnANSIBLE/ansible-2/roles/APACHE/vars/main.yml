@@ -1,4 +1,4 @@
 DOCUMENTROOT: "/opt/htdocs"
 PACKAGES: 
- - httpd
+ - httpd24
  - php
