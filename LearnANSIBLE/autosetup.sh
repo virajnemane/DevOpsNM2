@@ -1,4 +1,5 @@
 #!/bin/sh
+yum install git -y
 cp /etc/ssh/sshd_config /etc/ssh/sshd_config.org
 sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 service sshd restart

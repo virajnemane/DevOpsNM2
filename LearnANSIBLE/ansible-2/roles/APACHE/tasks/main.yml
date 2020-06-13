@@ -22,7 +22,7 @@
 - name: "Copying apache document root"
   copy: 
     src: "index.html"
-    dest: "/opt/htdocs/"
+    dest: "{{ DOCUMENTROOT }}"
     owner: apache
     group: apache
     mode: 0755
