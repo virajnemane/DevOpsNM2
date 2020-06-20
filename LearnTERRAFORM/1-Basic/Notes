@@ -9,6 +9,8 @@ Terraform
     Note - you can keep code in version control system like GIT, will help to maintain history of infrastructure.
 6) Terraform files have .tf extension
 
+Terraform AWS documentation - https://www.terraform.io/docs/providers/aws/index.html
+
 installation
 ------------
 Terraform comes as portable installer. So just download zip file and unzip it. It has only one file terraform which is binary file.
