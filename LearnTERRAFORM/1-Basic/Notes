@@ -46,7 +46,7 @@ terrform init
 }
  
 resource "aws_instance" "test1" {
-  ami           = "ami-0e01ce4ee18447327"
+  ami           = "ami-083ebc5a49573896a"
   instance_type = "t2.micro"
 }
 
@@ -77,6 +77,12 @@ This command will again show PLAN and ask for approval to make change.
 
 7) destroy whole infrastructure
 terraform destroy
+
+terraform.tfstate
+-------------------
+terraform.tfstate file play very important role in terraform. It is db for terraform, contain status of infrastructure at the time of last apply command.
+If this file get deleted, then whatever infrastructure created till the time, will be stateless and can not control by terraform.
+
 
 ###############################
 It is a always a good idea to take bluprint of terrform plan and then apply that blueprint.
