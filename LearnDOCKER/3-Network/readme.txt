@@ -1,4 +1,4 @@
-#Check existing network
+ #Check existing network
 docker network ls
 --> There are 4 types of network
     1) bridge - This is default one. Help to communicate container with each other on single host.
@@ -30,11 +30,14 @@ docker network inspect flaskNet
 #Note : in app.py we are calling redis url with redis name as DNS name. We can not use IP address as ip always get changed whenever container change.
 So we use network. When we use network, container name is mapped to it's IP. To cross verify you can perform below task
 
+#stop d3 container 
+docker container d3 stop
+
 #change name in app.py
 original line --> app.config['REDIS_URL'] = 'redis://redis:6379/0'
 replace with this --> app.config['REDIS_URL'] = 'redis://micky:6379/0'
 
-#run redis container
+#run redis container if you have stopped redis container.
 docker container run -itd --rm --name redis --net flaskNet -p 6379:6379 redis
 Note -> we are running redis container with name redis
 
