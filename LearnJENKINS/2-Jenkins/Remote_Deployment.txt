@@ -1,0 +1,23 @@
+git url of application - https://github.com/tciaindiadevops/TestWebApp.git
+
+#spin ec2 instance which we will treat as client.
+
+#install "Publish over SSH" plugin
+#Manage Jenkins --> Configure system --> Publish over SSH
+#In 'Key' paste your ssh-key in PEM format which you have used while creating VM.
+    #Name - You can give anything
+    #hostname - application server ip
+    #username - ec2-user
+    #remote directory - /local/apps/tomcat
+#Click on Test Configuration...it should show Success...it means jenkins able to connect application server.
+#click on apply and save.
+
+#Click on New item --> Freestyle project --> ok
+#Source code mgmt --> paste git url of our application
+#build --> execute shell --> mvn clean install
+#post-build action --> Send build artifacts over SSH 
+    #source files - webapp/target/webapp.war
+    #remove prefix - webapp/target/
+    #remote directory - webapps/
+#click on apply and save
+#click on build
