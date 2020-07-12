@@ -22,8 +22,8 @@ wget http://ftp-nyc.osuosl.org/pub/jenkins/war-stable/2.204.2/jenkins.war
 mkdir /local/apps/tomcat -p
 cd /tmp
 wget $TOMCATURL
-unzip $TOMCATURL
-cd /tmp/apache-tomcat-10.0.0-M4/
+tar -xvf apache-tomcat-10.0.0-M7.tar.gz
+cd /tmp/apache-tomcat-10.0.0-M7/
 mv * /local/apps/tomcat
 chmod 755 /local/apps/tomcat/bin/*
 sh -x /local/apps/tomcat/bin/startup.sh
