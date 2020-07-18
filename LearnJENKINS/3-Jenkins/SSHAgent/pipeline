@@ -1,0 +1,26 @@
+pipeline {
+   agent any
+
+   stages {
+      stage('checkout') {
+         steps {
+            git url: "https://github.com/tciaindiadevops/TestWebApp.git",
+            branch: "form"
+         }
+      }
+      
+      stage('build') {
+          steps {
+            sh '/local/apps/maven/bin/mvn clean install'
+          }
+      }
+      
+      stage('deploy') {
+          steps {
+              sshagent(credentials: ['app1']) {
+            sh 'scp $WORKSPACE/webapp/target/webapp.war 172.16.1.110:/local/apps/tomcat/webapps/'
+            }
+          }
+      }
+   }
+}

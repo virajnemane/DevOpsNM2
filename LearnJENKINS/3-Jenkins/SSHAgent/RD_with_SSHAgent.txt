@@ -1,0 +1,3 @@
+#install SSH Agent plugin
+#Manage Jenkins --> Manage Credential --> add credential --> add key which you use to login on ec2 instance. (Instance key)
+#Create pipeline and copy pipeline script and change ip addres in script.
