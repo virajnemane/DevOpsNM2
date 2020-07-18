@@ -16,7 +16,7 @@ rpm -ivh jdk-8u141-linux-x64.rpm
 #install jenkins
 mkdir /local/apps/jenkins /local/apps/jenkins/bin /local/apps/jenkins/home /local/apps/jenkins/logs -p
 cd /local/apps/jenkins
-wget http://ftp-nyc.osuosl.org/pub/jenkins/war-stable/2.204.2/jenkins.war
+wget http://mirrors.jenkins-ci.org/war/2.245/jenkins.war
 
 #install tomcat
 mkdir /local/apps/tomcat -p
