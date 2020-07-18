@@ -1,5 +1,0 @@
----
-- name : "Create new ec2 instance"
-  hosts : "{{ HOSTS }}"
-  roles : 
-    - role : CREATEEC2
