@@ -13,5 +13,6 @@ mv * /local/apps/maven/
 
 mkdir /local/apps/jenkins /local/apps/jenkins/bin /local/apps/jenkins/logs /local/apps/jenkins/home -p
 cd /local/apps/jenkins
-wget http://mirrors.jenkins.io/war-stable/2.235.2/jenkins.war
+#wget http://mirrors.jenkins.io/war-stable/2.235.2/jenkins.war
+wget http://mirrors.jenkins-ci.org/war/2.245/jenkins.war
 chown ec2-user:ec2-user /local/apps/* -R
