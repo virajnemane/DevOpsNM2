@@ -12,7 +12,7 @@ do
 done
 
 HTTP_PORT=9090
-JENKINS_ARGS="--webroot=/local/apps/jenkins/webroot --prefix=/jenkins --httpPort=$HTTP_PORT"
+JENKINS_ARGS="--prefix=/jenkins --httpPort=$HTTP_PORT"
 
 export JENKINS_HOME JENKINS_ARGS JENKINS_URL
 mv $ROOT_DIR/logs/jenkins.log $ROOT_DIR/logs/jenkins_`date +%F-%H_%M`.log

@@ -1,0 +1,11 @@
+	
+#Create user dev and qa
+#install "Role-based Authorization Strategy" plugin
+#Manage Jenkins --> Authorization --> Role-Based Strategy
+#Mange Jenkins --> Manage and Assign Roles --> Manage Roles
+    #Create 2 roles one DEV and another is qa
+    #DEV role --> give full permission
+    #QA role --> Overall=read, JOB=build,cacel,read,workspace, VIEW=read
+
+Try login with DEV user and check you have all permission
+Try login with QA user you have only access to trigger build and cancel build.
